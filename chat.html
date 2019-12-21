@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Chat l Kakao Clone</title>
+  <script src="https://kit.fontawesome.com/8354a142e1.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!--부모클래스__상태바-->
+  <div class="status-bar">
+
+    <!--상태바__시계-->
+    <div class="status-bar__column">
+      <span class="status-bar__clock">13:54 </span>
+    </div>
+
+    <!--상태바_아이콘-->
+    <div class="status-bar__column">
+      <i class="fas fa-clock"></i>
+      <i class="fas fa-volume-mute"></i>
+      <i class="fas fa-wifi"></i>
+      <i class="fas fa-battery-full"></i>
+      <span class="status-bar__battery-level">100%</span>
+    </div>
+
+  </div>
+
+  <header class="header">
+
+    <!--Chats-->
+    <div class="header__header-column">
+
+      <a href="index.html">
+        <i class="fas fa-arrow-left fa-2x"> </i>
+      </a>
+
+      <h1 class="header__title">Best Friend</h1>
+    </div>
+
+    <!--스크린 타이틀-->
+    <div class="header__header-column">
+
+      <!--1-->
+      <span class="header__icon">
+        <i class="fas fa-search"></i>
+      </span>
+
+      <!--2-->
+      <div class="header__icon">
+        <i class="fas fa-bars"></i>
+      </div>
+
+    </div>
+  </header>
+
+  <!--채팅 목록-->
+  <main class="chat">
+    <ul class="chat__messages">
+      <span class="chat__timestamp">Friday, January 11, 2019</span>
+
+      <!--상대방 메세지-->
+      <li class="incoming-message message">
+
+        <!--g-avatar-->
+        <img src="image/icon80.png" class="g-avatar message__avatar">
+
+        <div class="message__content">
+          <span class="message__author">
+            <!--친구이름-->
+            Best Friend
+          </span>
+
+          <div class="message__bubble">
+            <!--대화내용-->
+            Congrats I love you!
+          </div>
+        </div>
+
+        <span class="message__timestamp"></span>
+      </li>
+
+      <!--내가 보낸 메세지-->
+      <li class="incoming-message message">
+
+        <div class="message__content">
+          <span class="message__timestamp"></span>
+          <div class="message__bubble">
+            <!--대화내용-->
+            Thank You!
+          </div>
+        </div>
+      </li>
+
+    </ul>
+  </main>
+
+  <!--마지막 입력칸-->
+  <div class="chat__write">
+
+    <!--Plus__추가항목-->
+    <div class="chat__write-column">
+      <i class="far fa-plus-square"></i>
+    </div>
+
+    <!--Input__입력칸-->
+    <div class="chat__write-column">
+      <input type="text" placeholder="Send message" class="chat__write-input">
+    </div>
+
+    <!--icon__전송,마이크-->
+    <div class="chat__write-column">
+
+      <span class="chat__write-icon">
+        <i class="far fa-smile-wink"></i>
+      </span>
+
+      <span class="chat__write-icon">
+        <i class="fas fa-microphone"></i>
+      </span>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
