@@ -10,56 +10,61 @@
   <script src="https://kit.fontawesome.com/8354a142e1.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
-  <!--부모클래스__상태바-->
-  <div class="status-bar">
+<body class="chats-body">
 
-    <!--상태바__시계-->
-    <div class="status-bar__column">
-      <span class="status-bar__clock">13:54 </span>
+  <div class="header-wrapper">
+
+    <!--부모클래스__상태바-->
+    <div class="status-bar">
+
+      <!--상태바__시계-->
+      <div class="status-bar__column">
+        <span class="status-bar__clock">13:54 </span>
+      </div>
+
+      <!--상태바_아이콘-->
+      <div class="status-bar__column">
+        <i class="fas fa-clock"></i>
+        <i class="fas fa-volume-mute"></i>
+        <i class="fas fa-wifi"></i>
+        <i class="fas fa-battery-full"></i>
+        <span class="status-bar__battery-level">100%</span>
+      </div>
+
     </div>
 
-    <!--상태바_아이콘-->
-    <div class="status-bar__column">
-      <i class="fas fa-clock"></i>
-      <i class="fas fa-volume-mute"></i>
-      <i class="fas fa-wifi"></i>
-      <i class="fas fa-battery-full"></i>
-      <span class="status-bar__battery-level">100%</span>
-    </div>
+    <header class="header">
 
+      <!--Chats-->
+      <div class="header__header-column">
+
+        <a href="index.html" class="header__back-btn">
+          <i class="fas fa-arrow-left"> </i>
+        </a>
+
+        <h1 class="header__title">Best Friend</h1>
+      </div>
+
+      <!--스크린 타이틀-->
+      <div class="header__header-column">
+
+        <!--1-->
+        <span class="header__icon">
+          <i class="fas fa-search"></i>
+        </span>
+
+        <!--2-->
+        <span class="header__icon">
+          <i class="fas fa-bars"></i>
+        </span>
+
+      </div>
+    </header>
   </div>
 
-  <header class="header">
-
-    <!--Chats-->
-    <div class="header__header-column">
-
-      <a href="index.html" class="header__back-btn">
-        <i class="fas fa-arrow-left"> </i>
-      </a>
-
-      <h1 class="header__title">Best Friend</h1>
-    </div>
-
-    <!--스크린 타이틀-->
-    <div class="header__header-column">
-
-      <!--1-->
-      <span class="header__icon">
-        <i class="fas fa-search"></i>
-      </span>
-
-      <!--2-->
-      <span class="header__icon">
-        <i class="fas fa-bars"></i>
-      </span>
-
-    </div>
-  </header>
-
   <!--채팅 목록-->
-  <main class="chat">
+  <main class="chat-screen">
+
     <ul class="chat__messages">
       <span class="chat__timestamp">Friday, January 11, 2019</span>
 
@@ -70,32 +75,66 @@
         <img src="image/tete.JPG" class="m-avatar message__avatar">
 
         <div class="message__content">
-          <span class="message__author">
-            <!--친구이름-->
-            Best Friend
+
+          <!--대화내용-->
+          <span class="message__bubble">
+            Congrats I love you!
           </span>
 
-          <div class="message__bubble">
-            <!--대화내용-->
-            Congrats I love you!
-          </div>
+          <!--친구이름-->
+          <span class="message__author">
+            Best Friend
+          </span>
         </div>
 
         <span class="message__timestamp"></span>
       </li>
 
       <!--내가 보낸 메세지-->
-      <li class="incoming-message message">
-
+      <li class="sent-message message">
         <div class="message__content">
-          <span class="message__timestamp"></span>
-          <div class="message__bubble">
-            <!--대화내용-->
-            Thank You!
-          </div>
+
+          <!--대화내용-->
+          <span class="message__bubble">
+            Thank You see soon!
+          </span>
+
         </div>
       </li>
 
+      <!--상대방 메세지-->
+      <li class="incoming-message message">
+
+        <!--g-avatar-->
+        <img src="image/tete.JPG" class="m-avatar message__avatar">
+
+        <div class="message__content">
+
+          <!--대화내용-->
+          <span class="message__bubble">
+            Congrats I love you!
+          </span>
+
+          <!--친구이름-->
+          <span class="message__author">
+            Best Friend
+          </span>
+        </div>
+
+        <span class="message__timestamp"></span>
+      </li>
+
+      <!--내가 보낸 메세지-->
+      <li class="sent-message message">
+        <div class="message__content">
+
+          <!--대화내용-->
+          <span class="message__bubble">
+            Thank You see soon!
+          </span>
+
+        </div>
+      </li>
     </ul>
   </main>
 
