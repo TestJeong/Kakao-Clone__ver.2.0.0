@@ -68,20 +68,20 @@
     <ul class="chat__messages">
       <span class="chat__timestamp">Friday, January 11, 2019</span>
 
-      <!--상대방 메세지-->
+      <!--첫번째__상대방 메세지-->
       <li class="incoming-message message">
 
-        <!--g-avatar-->
+        <!--첫번째__g-avatar-->
         <img src="image/tete.JPG" class="m-avatar message__avatar">
 
         <div class="message__content">
 
-          <!--대화내용-->
+          <!--첫번째__대화내용-->
           <span class="message__bubble">
             Congrats I love you!
           </span>
 
-          <!--친구이름-->
+          <!--첫번째__친구이름-->
           <span class="message__author">
             Best Friend
           </span>
@@ -90,11 +90,11 @@
         <span class="message__timestamp"></span>
       </li>
 
-      <!--내가 보낸 메세지-->
+      <!--첫번째__내가 보낸 메세지-->
       <li class="sent-message message">
         <div class="message__content">
 
-          <!--대화내용-->
+          <!--첫번째__대화내용-->
           <span class="message__bubble">
             Thank You see soon!
           </span>
@@ -102,20 +102,20 @@
         </div>
       </li>
 
-      <!--상대방 메세지-->
+      <!--두번째__상대방 메세지-->
       <li class="incoming-message message">
 
-        <!--g-avatar-->
+        <!--두번째__g-avatar-->
         <img src="image/tete.JPG" class="m-avatar message__avatar">
 
         <div class="message__content">
 
-          <!--대화내용-->
+          <!--두번째__대화내용-->
           <span class="message__bubble">
             Congrats I love you!
           </span>
 
-          <!--친구이름-->
+          <!--두번째__친구이름-->
           <span class="message__author">
             Best Friend
           </span>
@@ -124,11 +124,11 @@
         <span class="message__timestamp"></span>
       </li>
 
-      <!--내가 보낸 메세지-->
+      <!--두번째__내가 보낸 메세지-->
       <li class="sent-message message">
         <div class="message__content">
 
-          <!--대화내용-->
+          <!--두번째__대화내용-->
           <span class="message__bubble">
             Thank You see soon!
           </span>
@@ -139,20 +139,17 @@
   </main>
 
   <!--마지막 입력칸-->
-  <div class="chat__write">
+  <div class="chat__write--container">
+
+    <input type="text" class="chat__write" placeholder="Send message" class="chat__write-input">
 
     <!--Plus__추가항목-->
-    <div class="chat__write-column">
+    <div class="chat__icon-left chat__icon">
       <i class="far fa-plus-square"></i>
     </div>
 
-    <!--Input__입력칸-->
-    <div class="chat__write-column">
-      <input type="text" placeholder="Send message" class="chat__write-input">
-    </div>
-
     <!--icon__전송,마이크-->
-    <div class="chat__write-column">
+    <div class="chat__icon-right chat__icon">
 
       <span class="chat__write-icon">
         <i class="far fa-smile-wink"></i>
